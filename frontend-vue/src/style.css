@@ -1,0 +1,625 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    overflow-x: hidden;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    max-width: 1124px;
+    margin: 100px 130px auto 260px;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 32px;
+   
+}
+
+
+.card {
+    width: 100%;
+    height: 370px;
+    padding: 20px 24px;
+    border-radius: 12px;
+    border: 1px solid #D8D9DD;
+    box-sizing: border-box;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.card:hover{
+    box-shadow: 0px 0px 48px 0px #55555540;
+}
+.card-wrap{
+    width: 20%;
+    height: 20%;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.title{
+    position: absolute;
+    width: 228px;
+    height: 68px;
+    margin: 0 auto; /* Otomatik yatay kenar boşluğu ekleyerek ortalar */
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    top: 44px;
+    left: 297px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 20px;
+    gap: 24px;
+    color: #26303E;
+}
+.user-header{
+    width: auto;
+    height: 100px;
+}
+
+.user-info{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.user-photo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    
+}
+.user-general{
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    left: 100px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    font-weight: 500px;
+    width: auto;
+    height: auto;
+    line-height: 18px;
+    padding: 0;
+    margin: 0;
+    color:#26303E;
+}
+.text{
+    font-weight: 300;
+    width: 100%;
+    height: auto;
+    line-height: 14px;
+    font-size: 14px;
+    padding: 5;
+    margin: 0;
+    color: #5C6672;
+}
+span{
+    width: auto;
+    height: auto;
+    line-height: 14px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+    display: flex;
+}
+.info-header{
+    width: 60px;
+    height: 21px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #313E50;
+}
+.user-wrap{
+    width: 259px;
+    height: 60px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+.icon-head{
+    width: 96px;
+    height: 24px;
+    gap: 12px;
+    display: flex;
+}
+.sidebar{
+    position: fixed;
+    width: 280px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    padding: 32px 0px;
+    border-right: 1px solid #D8D9DD;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F5F5F5;
+}
+.card-button{
+    width: 279px;
+    height: 40px;
+    gap: 32px;
+    border-right: 1px solid #D8D9DD;
+    display: flex;
+}
+
+.rectangle{
+    width: 6px;
+    height: 40px;
+    border-radius: 0px 6px 6px 0px;
+    background-color: #4F359B;
+}
+.active {
+    background-color: #FFFFFF;
+}
+
+.button{
+    gap: 12px;
+    display: flex;
+    width: auto;
+    height: auto;
+    color: #4F359B;
+    padding: 5px;
+}
+.button-text{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    text-decoration: none;
+}
+.button-text.clicked{
+    background-color: #FFFFFF;
+}
+.logo{
+    width: 228px;
+    height: fit-content;
+    min-height: 64px;
+    margin-bottom: 24px;
+    position: absolute;
+    bottom: 32px;
+    left: 25px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.line{
+    border-radius: 0;
+    transform: rotate(0deg);
+    margin-bottom: 24px;
+    border: 1px solid #D8D9DD;
+}
+.n2-mobil{
+    width: 228px;
+    height: 40px;
+    gap: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.n2-logo{
+    width: 40px;
+    height: 40px;
+}
+.n2-text{
+    color: #485B69;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 33px;
+    width: 92px;
+    height: 33px;
+}
+.buttons{
+    width: fit-content;
+    height: fit-content;
+    width: 280px;
+    height: 168px;
+    top: 124px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+    border-radius: 4px;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+.person {
+    width: 228px;
+    height: 68px;
+    margin: 0 auto; /* Otomatik yatay kenar boşluğu ekleyerek ortalar */
+    margin-bottom: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    gap: 20px;
+    top: 44px;
+}
+
+.person-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.person-info {
+    display: inline-block;
+}
+
+.person-name {
+    width: 100%;
+    height: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    display: block;
+}
+.person-line{
+    width: 228px;
+    border: 1px solid #D8D9DD;
+    transform: rotate(0deg);
+    margin-top: 100px;
+    position: absolute;
+}
+.person-email {
+    width: 100%;
+    height: 14px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    display: block;
+    color: #5C6672;
+    text-decoration: underline;
+}
+.person-email a{
+    color: #5C6672;
+}
+.todo-list{
+    width: 653px;
+    height: 768px;
+    top: 156px;
+    left: 296px;
+    margin-top: 75px;
+}
+.todo{
+    width: 653px;
+    height: 48px;
+    padding: 0px 337px 0px 0px;
+    display: flex;
+    align-items: center;
+}
+.checkbox-box{
+    width: 40px;
+    height: 40px;
+    padding: 11px;
+    border-radius: 100px;
+}
+.checkbox{
+    width: 20px;
+    height: 20px;
+    top: 14px;
+    left: 6px;
+    accent-color: #4F359B;
+    display: inline-block;
+}
+
+input[type="checkbox"]:checked + .checkbox {
+background-color: #4F359B; /* Örnek bir renk */
+}
+.todo-text{
+    width: 100%;
+    height: 20px;
+    top: 14px;
+    left: 48px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 10px;
+    letter-spacing: 0;
+    color: #485B69;
+}
+
+
+
+.post-container {
+    width: 1124px;
+    height: 896px;
+    top: 100px;
+    left: 288px;
+    position: absolute;
+    display: flex; /* İçeriği yatay olarak düzenler */
+    flex-direction: column; /* İçeriği dikey olarak düzenler */
+    align-items: flex-start; /* İçeriği üstten başlatır */
+}
+
+.post-wrap {
+    opacity: 1;
+    position: relative;
+    top: 0px;
+    left: 20px;
+    overflow: hidden;
+    width: 1024px; 
+    height: 176px; 
+    padding: 20px 32px;
+    border-bottom: 1px solid #D8D9DD;
+    box-sizing: border-box; 
+    gap: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.post {
+    width: 100%;
+    height: 92px;
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    top: 20px;
+    left: 32px;
+    overflow: hidden;
+}
+
+.post-title {
+    width: 498px;
+    color: #26303E;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+.post-summary {
+    width: 50%;
+    height: 60px;
+    color: #000000B2;
+    position: absolute;
+    top: 32px;
+    left: 0px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline-block;
+}
+
+.see-more {
+    width: 131px;
+    height: 32px;
+    display: flex;
+}
+
+.see-more-button {
+    width: 131px;
+    color: rgba(38,48,62,1);
+    position: absolute;
+    top: 124px;
+    left: 850px;
+    font-weight: 500;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    max-width: 1024px;
+    max-height: 550px;
+    top: 18%;
+    left: 18%;
+    padding: 36px 32px; 
+    border-radius: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+  }
+  
+  .overlay {
+    display: none; /* Overlay'i varsayılan olarak gizle */
+    position: fixed;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Koyulaşma rengi ve opaklığı */
+  }
+  
+  .modal-content {
+    position: fixed;
+    max-width: 1024px;
+    max-height: 609px;
+    height: auto;
+    width: auto;
+    top: 18%;
+    left: 18%;
+    padding: 36px 32px; 
+    border-radius: 24px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #FFFFFF;
+
+  }
+  
+  .close {
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    text-decoration: none;
+  }
+  .modal-title{
+    width: 112px;
+    height: 20px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #26303E;
+    position: relative;
+  }
+  .post-content{
+    width: 950px;
+    height: 503px;
+    top: 20px;
+    
+  }
+  .content{
+    width: 484px;
+    height: 300px;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column; /* İçeriği dikey olarak düzenler */
+    align-items: flex-end;
+    padding-top: 20px;
+    padding-left: 20px;
+    overflow-y: scroll;
+  }
+  .description{
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000B2;
+  }
+  .comment-section{
+    width:  418px;
+    height:  523px;
+    left: 540px;
+    top: 80px;
+    padding: 24px, 24px, 32px, 24px;
+    border-left: 1px solid #D8D9DD;
+    gap: 20px;
+    position: absolute;
+
+  }
+  .comments{
+    width: auto;
+    max-width: 418px;
+    max-height: 439px;
+    height: auto;
+    position: relative;
+    overflow-y: scroll;
+  }
+  .comment-title{
+    width: 115px;
+    height: 32px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 32px;
+    color: #26303E;
+    padding-top: 20px;
+    padding-left: 20px;
+    position: sticky;
+  }
+  .comment-wrap{
+    width: 370px;
+    height: 125px;
+    padding-left: 20px;
+    padding-top: 30px;
+  }
+  .comment-img {
+    width: 48px;
+    height: 48px;
+    border: 1px;
+    border-radius: 50%;
+    position: absolute; /* Mutlak pozisyonlandırma */
+  
+  }
+  
+  .comment-content {
+    width: 306px;
+    height: 122px;
+    position: absolute; /* Mutlak pozisyonlandırma */
+    left: 84px; /* Başlangıç noktasından sağa 64px uzaklık */
+  }
+  .comment-name{
+    width: 81px;
+    height: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: #26303E;
+  }
+  .comment-dec{
+    width: 306px;
+    height: 100px;
+    top: 26px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #5C6672;
+  }
+
+    .images{
+        width: 300px;
+        height: 256px;;
+        border: 1px solid #26303E;
+        display: grid;
+        grid-template-columns: repeat(2, 160px); /* Sabit genişlik */
+        grid-auto-rows: 128px; /* Sabit yükseklik */
+        overflow: hidden; 
+    }
+    .images img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .image-header{
+        width: 256px;
+        height: 20px;
+        font-family: Roboto, sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 20px;
+        color: #26303E;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    .album-images {
+        width: 1124px;
+        height: auto; /* Ya da belirli bir yükseklik değeri belirleyebilirsiniz */
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .album-images img {
+        max-height: 200px;
+        max-width: 300px;
+        width: auto;
+        height: auto;
+        margin: 5px;
+        box-sizing: border-box;
+    }
+    .router-link{
+        text-decoration: none;
+    }
+    
