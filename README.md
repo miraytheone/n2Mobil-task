@@ -48,7 +48,6 @@ This project is a web application developed using Vue.js and Django, storing dat
     python manage.py runserver
     ```
 
-8. **Visit `http://localhost:8080` in your browser to view the application.**
 
 ## Usage
 
