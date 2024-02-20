@@ -40,7 +40,7 @@ This project is a web application developed using Vue.js and Django, storing dat
 
 6. **Start the frontend:**
     ```bash
-    npm run serve
+    npm run dev
     ```
 
 7. **Start the backend:**
